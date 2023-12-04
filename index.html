@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Healthy Cannabis Business - Providing high-quality cannabis products">
+    <title>Science Behind Cannabis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Didi's Cana Shop</h1>
+        <img src="images\Cana 1.jpg" alt="Logo" class="logo">
+        <nav>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#About">About Us</a></li>
+              <li><a href="#Products">Products</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="https://externalwebsite.com" target="_blank">External Link</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Didi's Cana Shop</h2>
+        <p>Check out our menu and place your order today</p>
+        <!--- <img src="images\Cana 1.jpg" alt="Healthy Cannabis Plant"> --->
+        <img src="images\Cana 2.jpg" alt="Healthy Cannabis buds">
+        <h2>Pick Up</h2>
+        <p>We are open for Curbside Pickup. When you arrive at the store, a team member will be waiting at the front door to validate your ID and get your order. 
+           You may also be asked to present the credit card used for purchase for verification purposes, including a PIN verification.</p>
+        <h2>Free Delivery</h2>
+         <p>We offer free delivery on orders over $40.
+            Select your preferred delivery window including many same day options. 
+            Please be cautious and wear a mask when picking up your order from your driver. 
+            This measure is in place to keep all guests and staff safe.</p>  
+        </section>
+
+    <h3>Our Products</h3>
+
+    <section id="products">
+
+        <div class="column">
+            <img src="images\thc.jpg" alt="THC Oil Bottle">
+            <h4>THC Oil</h4>
+            <p>THC has potential uses in treating some of the following:
+                glaucoma.
+                muscle spasticity.
+                low appetite.
+                insomnia.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p class="price">$50.00</p>
+            <button class="add-to-cart" onclick="addToCart('THC Oil', 50.00)">Add to Cart</button>
+        </div>
+
+        <div class="column">
+            <img src="images\cbd.jpg" alt="CBD Oil">
+            <h4>CBD Oil</h4>
+            <p>Here are a few ways studies suggest CBD oil could benefit your health.
+                Offset Anxiety and Depression.
+                Treat Select Epilepsy Syndromes.
+                Reduce PTSD Symptoms.
+                Treat Opioid Addiction. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p class="price">$40.00</p>
+            <button class="add-to-cart" onclick="addToCart('CBD Oil', 40.00)">Add to Cart</button>
+        </div>
+
+        <div class="column">
+            <img src="images\indica.jpg" alt="Indica Cannabis">
+            <h4>Indica</h4>
+            <p>Overall, indica cannabis is an incredibly beneficial plant, 
+                providing physical pain relief, stress relief, improved sleep, 
+                appetite stimulation, and increased creativity</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p class="price">$60.00</p>
+            <button class="add-to-cart" onclick="addToCart('Indica', 60.00)">Add to Cart</button>
+        </div>
+
+        <div class="column">
+            <img src="images\sativa.jpg" alt="Sativa Cannabis">
+            <h4>Sativa</h4>
+            <p>The Sativa strain offers more of a 'cerebral high' which can help with anxiety as well as 
+                increased focus and concentration</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p class="price">$55.00</p>
+            <button class="add-to-cart" onclick="addToCart('Sativa', 55.00)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3>Contact Us</h3>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: $0.00</p>
+    </section>
+
+    <div class="top-bar">
+        <p>Order Now! <b>(800)-5656-7321</b></p>
+        <input type="button" class="greenBtn" value="CALL NOW"/>
+      </div>
+
+    <footer>
+        <p>&copy; Didi's Canna Shop</p>
+    </footer>
+</body>
+</html>
